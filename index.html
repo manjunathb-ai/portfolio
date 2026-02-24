@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manjunath B | Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<body>
+  <div class="cursor-glow"></div>
+  <div class="background-glow"></div>
+<nav class="navbar">
+<div class="logo">
+  <svg viewBox="0 0 120 100" width="55">
+    <defs>
+      <linearGradient id="mbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#38bdf8"/>
+        <stop offset="100%" stop-color="#8b5cf6"/>
+      </linearGradient>
+    </defs>
+
+    <!-- Custom M -->
+    <path d="M10 80 L10 20 L30 50 L50 20 L50 80"
+          stroke="url(#mbGrad)"
+          stroke-width="10"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+    <!-- Custom B -->
+    <path d="M70 20 L70 80 
+             M70 20 Q100 25 90 50 
+             Q100 75 70 80"
+          stroke="url(#mbGrad)"
+          stroke-width="10"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+  </svg>
+</div>
+
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+ <section class="hero reveal">
+    <div class="hero-content">
+      <h4>Hi, I'm</h4>
+      <h1>Manjunath B</h1>
+      <h2>Building Scalable, High-Performance Web Applications</h2>
+
+      <p>
+        Full Stack & Frontend Developer specializing in React,
+        Next.js and Node.js. Focused on clean UI,
+        performance optimization and production-ready systems.
+      </p>
+
+      <div class="buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="assets/Manjunath_B_Resume.pdf" 
+   download="Manjunath_B_Resume.pdf" 
+   class="btn outline">
+   Download Resume
+</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/manjunath.png" alt="Manjunath B">
+    </div>
+    </section>
+<section id="skills" class="skills reveal">
+  <h2 class="section-title">Core Expertise</h2>
+
+  <div class="skills-grid">
+
+    <div class="skill-card frontend">
+      <div class="skill-content">
+        <h3>Frontend Development</h3>
+        <p>React • Next.js • JavaScript • UI Architecture</p>
+      </div>
+    </div>
+
+    <div class="skill-card backend">
+      <div class="skill-content">
+        <h3>Backend Engineering</h3>
+        <p>Node.js • Express • REST APIs</p>
+      </div>
+    </div>
+
+    <div class="skill-card database">
+      <div class="skill-content">
+        <h3>Database Systems</h3>
+        <p>MongoDB • MySQL</p>
+      </div>
+    </div>
+
+    <div class="skill-card tools">
+      <div class="skill-content">
+        <h3>Tools & Workflow</h3>
+        <p>Git • GitHub • Postman • VS Code</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section id="projects" class="projects reveal">
+  <h2 class="section-title">Featured Projects</h2>
+
+  <div class="projects-container">
+
+    <!-- Project 1 -->
+    <div class="project-row">
+      <div class="project-image">
+        <img src="images/project1.png" alt="CodeHireGlobal">
+      </div>
+      <div class="project-details">
+        <h3>CodeHireGlobal</h3>
+        <p>
+          A full-stack job portal platform connecting candidates and recruiters.
+          Built secure authentication, job listing filters, recruiter dashboard,
+          and responsive UI optimized for performance.
+        </p>
+
+        <div class="tech-stack">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>MongoDB</span>
+          <span>Express</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://codehireglobal.com/" target="_blank" class="btn primary">Live</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-row reverse">
+      <div class="project-image">
+        <img src="images/project2.png" alt="CSS Inc">
+      </div>
+      <div class="project-details">
+        <h3>CareerSoft Solutions (CSS Inc)</h3>
+        <p>
+          AI-driven career and skills platform designed to help users explore
+          opportunities and enhance professional growth with interactive UI
+          and optimized performance.
+        </p>
+
+        <div class="tech-stack">
+          <span>React</span>
+          <span>JavaScript</span>
+          <span>Tailwind</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://cssinc.ai/" target="_blank" class="btn primary">Live</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-row">
+      <div class="project-image">
+        <img src="images/project3.png" alt="PRN IT">
+      </div>
+      <div class="project-details">
+        <h3>PRN IT Corp</h3>
+        <p>
+          Enterprise IT services platform delivering software solutions and
+          consulting services. Designed responsive UI and optimized layout
+          for business-focused presentation.
+        </p>
+
+        <div class="tech-stack">
+          <span>Responsive UI</span>
+          <span>Frontend</span>
+          <span>Performance</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://www.prnitcorp.com/" target="_blank" class="btn primary">Live</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="contact-wrapper">
+
+    <h2 class="section-title">Let’s Build Something Great</h2>
+    <p class="contact-subtext">
+      Have a project in mind? Let’s connect and create something impactful.
+    </p>
+
+    <form id="contact-form" class="contact-form">
+
+      <div class="input-group">
+        <input type="text" name="name" required>
+        <label>Your Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" name="email" required>
+        <label>Your Email</label>
+      </div>
+
+      <div class="input-group">
+        <input type="tel" name="mobile" required>
+        <label>Mobile Number</label>
+      </div>
+
+      <div class="input-group">
+        <textarea name="message" rows="5" required></textarea>
+        <label>Your Message</label>
+      </div>
+
+      <button type="submit" class="btn primary contact-btn">
+        Send Message
+      </button>
+
+    </form>
+
+  </div>
+</section>
+<footer class="footer">
+
+  <div class="social-icons">
+    <a href="https://www.instagram.com/crazy_manjunath/?hl=en" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://www.facebook.com/profile.php?id=100006003768665" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-facebook"></i>
+    </a>
+
+    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/manjunathb-fullstack/" target="_blank" rel="noopener noreferrer" class="icon linkedin">
+  <i class="fab fa-linkedin-in"></i>
+</a>
+<a href="mailto:manjunathb1011@gmail.com" class="icon email">
+  <i class="fas fa-envelope"></i>
+</a>
+  </div>
+
+  <p class="copyright">
+    © 2026 Manjunath B. All Rights Reserved.
+  </p>
+
+</footer>
+<button id="backToTop">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
