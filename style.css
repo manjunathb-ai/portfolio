@@ -173,17 +173,27 @@ body {
 /* ================= SKILLS SECTION ================= */
 
 .skills {
-  padding: 160px 80px;
+  padding: 80px 80px;
   text-align: center;
 }
 
 .section-title {
   font-size: 48px;
-  margin-bottom: 80px;
   font-weight: 700;
-  background: linear-gradient(90deg, #38bdf8, #8b5cf6);
+  text-align: center;        /* THIS CENTERS THE TEXT */
+  margin: 0 auto 60px auto;  /* CENTER BLOCK + BOTTOM SPACE */
+  
+  background: linear-gradient(
+    90deg,
+    #38bdf8,
+    #8b5cf6,
+    #ec4899,
+    #38bdf8
+  );
+  background-size: 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: gradientMove 6s linear infinite;
 }
 
 .skills-grid {
@@ -734,93 +744,7 @@ body::before {
   background: rgba(15, 23, 42, 0.9);
   box-shadow: 0 15px 40px rgba(139,92,246,0.3);
 }
-
-/* .footer {
-  padding: 40px;
-  text-align: center;
-  background: rgba(15,23,42,0.6);
-  border-top: 1px solid rgba(139,92,246,0.2);
-  margin-top: 80px;
-}
-
-.footer p {
-  margin-bottom: 15px;
-  color: #94a3b8;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-.footer-links a {
-  color: #a5b4fc;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.footer-links a:hover {
-  color: white;
-} */
- /* .footer {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  padding: 60px 20px;
-  color: white;
-  text-align: center;
-}
-
-.footer h2 {
-  margin-bottom: 30px;
-  font-size: 28px;
-  letter-spacing: 1px;
-}
-
-.tech-logos {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-bottom: 40px;
-}
-
-.tech-logos img {
-  width: 55px;
-  height: 55px;
-  transition: all 0.3s ease;
-  filter: grayscale(20%);
-}
-
-.tech-logos img:hover {
-  transform: scale(1.2);
-  filter: grayscale(0%);
-}
-
-.copyright {
-  font-size: 14px;
-  opacity: 0.8;
-} */
-
-/* .footer {
-  background: linear-gradient(135deg, #1e1e3f, #0f2027);
-  padding: 40px 20px;
-  text-align: center;
-  color: white;
-}
-
-/* Icons Container */
-/* .social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 35px;
-  margin-bottom: 20px;
-}
-.footer {
-  background: linear-gradient(135deg, #1e1e3f, #0f2027);
-  padding: 40px 20px;
-  text-align: center;
-  color: white;
-}
+  
 
 /* Icons Container */
 .social-icons {
@@ -925,4 +849,119 @@ body::before {
 
 #backToTop.show {
   animation: pulse 2s infinite;
+}
+
+/* ================= ABOUT SECTION ================= */
+
+.about {
+  padding: 80px 80px;   /* Reduced top space */
+}
+
+/* Centered Heading */
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title-divider {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #38bdf8, #8b5cf6);
+  margin: 15px auto 60px auto;
+  border-radius: 10px;
+}
+
+/* Main Layout */
+.about-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* IMAGE COLUMN */
+.about-image {
+  flex: 1.4;   /* Bigger image column */
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 750px;   /* Bigger image */
+  border-radius: 30px;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6);
+  transition: 0.4s ease;
+}
+
+.about-image img:hover {
+  transform: translateY(-10px);
+}
+
+/* CONTENT COLUMN */
+.about-content {
+  flex: 1;
+}
+
+.about-heading {
+  font-size: 24px;
+  margin: 25px 0;
+  color: #a5b4fc;
+}
+
+.about-text {
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+/* STATS SECTION */
+.about-stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 35px;
+}
+
+.stat-box h4 {
+  font-size: 30px;
+  background: linear-gradient(90deg, #38bdf8, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat-box p {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 992px) {
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 400px;
+  }
+
+  .about-heading,
+  .about-text {
+    text-align: center;
+  }
+
+  .about-stats {
+    justify-content: center;
+  }
+}
+
+.title-divider {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #38bdf8, #8b5cf6);
+  margin: 10px auto 60px auto;
+  border-radius: 10px;
 }
